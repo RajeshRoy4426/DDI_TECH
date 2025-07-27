@@ -1,0 +1,24 @@
+fastapi
+uvicorn
+SQLAlchemy
+# Core LangChain components
+langchain
+langgraph
+
+langgraph-prebuilt  # if you're using langgraph.prebuilt.create_react_agent
+
+# OpenAI SDKs
+openai  # For OpenAI's Python SDK (non-langchain)
+langchain-openai
+
+
+# Langchain MCP Adapters (used for MultiServerMCPClient) edit
+langchain-mcp-adapters
+
+# Dataclasses (only needed for Python < 3.7, safe to include)
+dataclasses
+
+# Typing extensions (for TypedDict, optional but useful)
+typing-extensions
+
+# asyncio is part of the Python standard library, no need to list
