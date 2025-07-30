@@ -28,6 +28,7 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
 import { Config } from '../services/config';
 import { Storage } from '../services/storage';
+import { NzRadioModule } from 'ng-zorro-antd/radio';
 
 @Component({
   selector: 'app-chatbot',
@@ -50,6 +51,7 @@ import { Storage } from '../services/storage';
     CarouselModule,
     NzToolTipModule,
     NzModalModule,
+    NzRadioModule,
   ],
   templateUrl: './chatbot.html',
   styleUrl: './chatbot.scss',
@@ -70,12 +72,16 @@ export class Chatbot {
   isVisible = false;
   isOkLoading = false;
   appInfo: any = null;
+  radioValue: string = '';
 
   constructor() {
-    effect(() => {
-      this.chatMessages = this.chatService.getMessages();
-      this.shouldScrollToBottom = true;
-    }, { allowSignalWrites: true });
+    effect(
+      () => {
+        this.chatMessages = this.chatService.getMessages();
+        this.shouldScrollToBottom = true;
+      },
+      { allowSignalWrites: true }
+    );
   }
 
   ngOnInit(): void {
@@ -171,18 +177,26 @@ export class Chatbot {
         id: responseData.id,
         type: responseType,
         message: responseData.message || 'Here are some programs...',
-        suggestedPrograms: responseData.program || []
+        suggestedPrograms: responseData.program || [],
       });
       return;
     }
 
     if (responseType === 'basic') {
-      this.chatService.addBotResponse({
+      let botResponse:any = {
         id: responseData.id,
         type: responseType,
         message: responseData.message || 'Okay, let me know how I can help!',
-        suggestedPrograms: [],
-      });
+      };
+
+      if (responseData.options) {
+        botResponse = {
+          ...botResponse,
+          options: responseData.options,
+        };
+      }
+      this.chatService.addBotResponse(botResponse);
+
       return;
     }
     //   if (responseType === 'error') {
@@ -198,6 +212,12 @@ export class Chatbot {
       message: 'Sorry, I didn’t understand that.',
       suggestedPrograms: [],
     });
+  }
+
+  onOptionSelected(event: any) {
+    const selectedOption = event;
+    this.currentMessage = selectedOption;
+    this.sendMessage();
   }
 
   private scrollToBottom() {

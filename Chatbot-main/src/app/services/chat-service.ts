@@ -25,57 +25,60 @@ export class ChatService {
   }
 
   pollForProgram(taskId: string) {
-  const pollInterval = 10000; // 10 seconds
-  const timeoutMs = 8 * 60 * 1000; // 8 minutes
-  const startTime = Date.now();
+    const pollInterval = 10000; // 10 seconds
+    const timeoutMs = 8 * 60 * 1000; // 8 minutes
+    const startTime = Date.now();
 
-  const poll = () => {
-    const elapsed = Date.now() - startTime;
-    const URL = `${this.configService.apiBaseUrl}/api/program-status/${taskId}`;
-    console.log(`Polling at ${new Date().toISOString()} | Task ID: ${taskId}`);
+    const poll = () => {
+      const elapsed = Date.now() - startTime;
+      const URL = `${this.configService.apiBaseUrl}/api/program-status/${taskId}`;
+      console.log(
+        `Polling at ${new Date().toISOString()} | Task ID: ${taskId}`
+      );
 
-    if (elapsed > timeoutMs) {
-      this.message.error('Program generation timed out after 8 minutes.');
-      return;
-    }
+      if (elapsed > timeoutMs) {
+        this.message.error('Program generation timed out after 8 minutes.');
+        return;
+      }
 
-    this.http.get(URL, { responseType: 'text' }).subscribe({
-      next: (raw) => {
-        try {
-          const res = JSON.parse(raw);
-          console.log('Poll response:', res);
+      this.http.get(URL, { responseType: 'text' }).subscribe({
+        next: (raw) => {
+          try {
+            const res = JSON.parse(raw);
+            console.log('Poll response:', res);
 
-          if (res.type === 'program') {
-            this.addBotResponse(res);
-          } else if (res.type === 'generating') {
-            setTimeout(poll, pollInterval);
+            if (res.type === 'program') {
+              this.addBotResponse(res);
+            } else if (res.type === 'generating') {
+              setTimeout(poll, pollInterval);
+            } else if (res.type === 'error') {
+              this.addBotResponse({
+                message:
+                  'Sorry, I was unable to generate the program. Please try again.',
+                suggestedPrograms: [],
+              });
+            } else {
+              this.message.warning('Unexpected response type.');
+            }
+          } catch (e) {
+            console.error('Failed to parse JSON:', e, raw);
+            this.message.error('Invalid response format from server.');
           }
-          else if (res.type === 'error') {
-             this.addBotResponse({
-              message: 'Sorry, I was unable to generate the program. Please try again.',
-              suggestedPrograms: [],
-            });}
-            else {
-            this.message.warning('Unexpected response type.');
-          }
-        } catch (e) {
-          console.error('Failed to parse JSON:', e, raw);
-          this.message.error('Invalid response format from server.');
-        }
-      },
-      error: (err) => {
-        console.error('Polling error:', err);
-        this.message.error('Error checking program status.');
+        },
+        error: (err) => {
+          console.error('Polling error:', err);
+          this.message.error('Error checking program status.');
           this.addBotResponse({
-          message: 'Sorry, I was unable to generate the program. Please try again.',
-          suggestedPrograms: [],
-        });
-      },
-    });
-  };
+            message:
+              'Sorry, I was unable to generate the program. Please try again.',
+            suggestedPrograms: [],
+          });
+        },
+      });
+    };
 
-  poll();
-}
+    poll();
+  }
   initializeChat() {
     const chatMessage: ChatMessage = {
       id: this.generateId(),
@@ -159,64 +162,72 @@ export class ChatService {
     //   return;
     // }
     if (response.type === 'generating' && response.data?.task_id) {
-    const loadingMessage: ChatMessage = {
-      id: this.generateId(),
-      content: '', // 👈 No text
-      type: 'generating', // 👈 So you can show a spinner
-      sender: 'typing', // 👈 Spinner-style
-      timestamp: new Date(),
-    };
+      const loadingMessage: ChatMessage = {
+        id: this.generateId(),
+        content: '', // 👈 No text
+        type: 'generating', // 👈 So you can show a spinner
+        sender: 'typing', // 👈 Spinner-style
+        timestamp: new Date(),
+      };
 
-    this.chatMessages.update((messages) => [
-      ...messages.filter(
-        (msg) =>
-          msg.sender !== 'typing' &&
-          !(msg.sender === 'bot' && msg.type === 'generating')
-      ),
-      loadingMessage,
-    ]);
+      this.chatMessages.update((messages) => [
+        ...messages.filter(
+          (msg) =>
+            msg.sender !== 'typing' &&
+            !(msg.sender === 'bot' && msg.type === 'generating')
+        ),
+        loadingMessage,
+      ]);
 
-    this.storageService.setItem('chatMessages', this.chatMessages());
+      this.storageService.setItem('chatMessages', this.chatMessages());
 
-    this.pollForProgram(response.data.task_id);
-    return;
-  }
-  //   if (response.type === 'error') {
-  //   const errorMessage: ChatMessage = {
-  //     id: this.generateId(),
-  //     content: response.data?.status || 'An unknown error occurred.', // Use response.data directly
-  //     type: 'error',
-  //     sender: 'bot',
-  //     timestamp: new Date(),
-  //   };
+      this.pollForProgram(response.data.task_id);
+      return;
+    }
+    //   if (response.type === 'error') {
+    //   const errorMessage: ChatMessage = {
+    //     id: this.generateId(),
+    //     content: response.data?.status || 'An unknown error occurred.', // Use response.data directly
+    //     type: 'error',
+    //     sender: 'bot',
+    //     timestamp: new Date(),
+    //   };
 
-  //   this.chatMessages.update((messages) => [
-  //     ...messages.filter(
-  //       (msg) =>
-  //         msg.sender !== 'typing' &&
-  //         !(msg.sender === 'bot' && msg.type === 'error')
-  //     ),
-  //     errorMessage,
-  //   ]);
+    //   this.chatMessages.update((messages) => [
+    //     ...messages.filter(
+    //       (msg) =>
+    //         msg.sender !== 'typing' &&
+    //         !(msg.sender === 'bot' && msg.type === 'error')
+    //     ),
+    //     errorMessage,
+    //   ]);
 
-  //   this.storageService.setItem('chatMessages', this.chatMessages());
-  //   return;
-  // }
+    //   this.storageService.setItem('chatMessages', this.chatMessages());
+    //   return;
+    // }
 
-    const botMessage: ChatMessage = {
+    let botMessage: ChatMessage = {
       id: response.id || this.generateId(),
-      content: response.message ||
-        (response.data?.message || 'Here are some programs that might interest you!'),
+      content:
+        response.message ||
+        response.data?.message ||
+        'Here are some programs that might interest you!',
       type: response.type,
       sender: 'bot',
       timestamp: new Date(),
       programs: response.suggestedPrograms || response.data?.program || [],
     };
 
+    if (response.options) {
+      botMessage = {
+        ...botMessage,
+        options: response.options,
+      };
+    }
+
     this.chatMessages.update((messages) => [
       ...messages.filter(
-        (msg) =>
-          msg.sender !== 'typing' 
+        (msg) => msg.sender !== 'typing'
         // &&
         //   !(msg.sender === 'bot' && msg.type === 'generating')
       ),

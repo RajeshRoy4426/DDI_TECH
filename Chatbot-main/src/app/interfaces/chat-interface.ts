@@ -8,6 +8,7 @@ export interface ChatMessage {
   timestamp: Date;
   type: 'text' | 'course-suggestion' | 'generating' | 'program' | 'error';
   programs?: Program[];
+  options?: any[];
 }
 
 export const carouselOptions: OwlOptions = {
