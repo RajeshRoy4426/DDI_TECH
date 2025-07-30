@@ -15,8 +15,8 @@ from langchain_openai import ChatOpenAI
 from langchain_mcp_adapters.client import MultiServerMCPClient
 # from langchain_mcp_adapters.client import MultiServerMCPClient # Not used in current main.py flow
 
-token=""
-DATABRICKS_TOKEN =""
+token="eyJraWQiOiIyMDdhN2JlMDhmMjBjNDBkNmUwZmU2ZWY3MzY5YTgxNjMxYjFlNDliMTg1M2VlNWFjMDhmM2NmNzlmZWUxNWYyIiwidHlwIjoiYXQrand0IiwiYWxnIjoiUlMyNTYifQ.eyJjbGllbnRfaWQiOiJkYXRhYnJpY2tzLWNsaSIsInNjb3BlIjoiYWxsLWFwaXMgb2ZmbGluZV9hY2Nlc3MiLCJpc3MiOiJodHRwczovL2FkYi00MTE5NTQ2OTgxNjY0NjQ0LjQuYXp1cmVkYXRhYnJpY2tzLm5ldC9vaWRjIiwiYXVkIjoiNDExOTU0Njk4MTY2NDY0NCIsInN1YiI6ImRpdnlhbnNoLm1hdGh1ckBjZWxlYmFsdGVjaC5jb20iLCJpYXQiOjE3NTM4NjY3OTIsImV4cCI6MTc1Mzg3MDM5MiwianRpIjoiM2UyMTllYzgtNTljNi00ZTIzLTkxNWQtY2U3ODczNjNmOGRkIn0.tcviDfrCpYc8WfC3tZnaSF6QdN6btt2QuRPlvH_BdQadR2lHR59gzolgn0Ip2lJQ5cWjI2ftcF5VaFaMKBqlIOrSTcXSNcl-i_U3_C9YBZQBGyVPbNRD6LpT-Ep76KxhM7Ym-bwEKSZqhxaZvu4okgkjDmvz_XRh4lfiKOSZl7fz1fWMXMN3oKuAr9F0cWPIUnkZKMmdxlFR3oq6aVQxRAb4MQLtJjwIeMwlK9LO8NeZzhkrLFDupkjC2hxlo2dT7h2lB04PIzVrsTvSlDhbFZvkJTtrfKDFWK7G6S7lz9DR3WOjeKw8Z_OqfV4FYTsJLABDKQilerFqAOL_zOIB9w"
+DATABRICKS_TOKEN ="dapi65ec397de20a4d282b6e77f8109c37cd-3"
 BASE_URL = "https://adb-4119546981664644.4.azuredatabricks.net/serving-endpoints"
 client = OpenAI(api_key=DATABRICKS_TOKEN, base_url=BASE_URL)
 
@@ -126,28 +126,31 @@ def field_selector_node(state: AgentState) -> AgentState:
     history = state["messages"].copy()
     system_prompt = """You are a professional program generation assistant helping gather detailed requirements from the user to generate a personalized learning program.
 
-There are four key fields to collect:
-1. 'objective' – What the user wants to achieve with the program (this is mandatory).
-2. 'timeframe' – How long the user wants the program to last (e.g., number of weeks or months or flexible). This is optional, but only mark it as skipped if the user explicitly chooses to skip.
-3. 'difficulty_level' – The desired difficulty of the program (e.g., beginner, intermediate, advanced). This is optional; if the user does not want to answer or skips it, default to 'medium'.
-4. 'topics' – Any specific topics the user wants included. This is optional and can be skipped.
+    There are four key fields to collect:
+    1. 'objective' – What the user wants to achieve with the program (this is mandatory).
+    2. 'timeframe' – How long the user wants the program to last (e.g., number of weeks or months or flexible). This is optional, but only mark it as skipped if the user explicitly chooses to skip.
+    3. 'difficulty_level' – The desired difficulty of the program (e.g., beginner, intermediate, advanced). This is optional; if the user does not want to answer or skips it, default to 'medium'.
+    4. 'topics' – Any specific topics the user wants included. This is optional and can be skipped.
 
-'Objective' must be collected explicitly from the user. For the remaining fields, ask the user appropriately but only skip if they explicitly state they want to skip.
-
-Use the conversation history to frame your next question naturally and professionally."""
+    'Objective' must be collected explicitly from the user. For the remaining fields, ask the user appropriately but only skip if they explicitly state they want to skip.
+    
+    Strictly make sure that you are a program generation assistant whose work is to generate program so don't answer the general question asked by the user only focus on gathering the information from teh user regarding program generation.
+    If user don't move ahead without knowing the answer of general question apart from the program generation then gently reply sorry but i don't know that as i am personalized program generation assistant only in this way.
+    
+    Use the conversation history to frame your next question naturally and professionally."""
 
     user_prompt = f"""Conversation history so far: {json.dumps(history)}
- 
-We are now collecting information for the '{next_field}' field.
- 
-Based on the above conversation, generate a clear, context-aware, and helpful question to ask the user for this field.
-Your question should be of Chatty conversation type. Greet the user if he is greeting.
- 
-Respond ONLY with a valid JSON in the following format:
-{{
-  "field": "<field>",
-  "question": "<your generated question>"
-}}"""
+
+    We are now collecting information for the '{next_field}' field.
+
+    Based on the above conversation, generate a clear, context-aware, and helpful question to ask the user for this field.
+    Your question should be of Chatty conversation type. Greet the user if he is greeting.
+
+    Respond ONLY with a valid JSON in the following format:
+    {{
+    "field": "<field>",
+    "question": "<your generated question>"
+    }}"""
 
     response = call_llm(history + [
         {"role": "system", "content": system_prompt},
@@ -244,6 +247,7 @@ Your job is to:
         state["step_completed"] = False # Indicate collection failed for this step
     
     return state
+
 async def extract_topics_node(state: AgentState) -> AgentState:
     start=time.time()
     # Build prompt
@@ -281,27 +285,35 @@ Return JSON: {{"topic_ids":[<all matching IDs>]}}."""
     return state
 
 async def fetch_assets_node(state: AgentState) -> AgentState:
-    start=time.time()
+        
+    start_time=time.time()
     tools = await get_configured_tools()
-    react_agent=create_react_agent(llama_model, tools,prompt="""
+    react_agent=create_react_agent(llama_model,tools,prompt="""
 You are an AI agent with access to Genie tools for retrieving topic–asset relationships.
+
 Your task:
 1. Given a list of Topic IDs, fetch **all assets** associated with each Topic ID using the Genie tools.
+
 take the below sql query for reference only 
+
 ```
 SELECT
     t.TopicId,                 -- Unique identifier for the topic
-    t.Name AS TopicName,       -- Display name of the topic 
+    t.Name AS TopicName,       -- Display name of the topic
+    
     a.AssetId,                 -- Unique identifier for the associated asset
     a.Name AS AssetName        -- Display name of the asset
 FROM Topic AS t
+
 -- Join to link each topic with its related assets
 INNER JOIN Topic_Category_Asset AS tca
     ON t.TopicId = tca.TopicId
     AND tca.Deleted = false    -- Only include active (non-deleted) topic-asset links
+
 -- Join to retrieve asset details
 INNER JOIN Asset AS a
     ON tca.AssetId = a.AssetId
+
 -- Filter to only include specific topic IDs from the program JSON
 WHERE t.TopicId IN (
     '46F2CFBA-F47D-4094-9EB1-08DC438C58DE',
@@ -310,37 +322,64 @@ WHERE t.TopicId IN (
     '524695EB-A38F-4CCD-3CC9-08DC68528327',
     'D67F21B2-7AB1-451B-A23A-D0003AF013CF'
 )
+
 -- Sort the results by TopicId for consistent ordering
 ORDER BY t.TopicId;
 ```
+
 Firsty list the spaces to get the space id "
 give me the final result containing all the assets attached with the topics mentioned above in the proper structured manner.
 
-                           """)
+                        """)
     
     ids = state["topic_ids"]
     user = f"""Topic IDs: {ids}
 Use the Genie tools and return me the json of all the assets with there connected topics"""
-    response = await react_agent.ainvoke(
-        {"messages":user}
-    )
-    # assume resp.content is the JSON string
-    resp=json.loads(response['messages'][-2].content)
-    columns_info=resp['manifest']['schema']
-    data=resp['result']['data_array']
-    state["topic_assets"] = f"""Content for the program generation is defined below 
-    schema of the columns of the content is ```{columns_info}```
-    
-    data:
-    ```
-    {data}
-    ```
-    
-    """
-    # print(state["topic_assets"])
-    end=time.time()
-    print(f"time taken by fetch assets node{end-start}")
 
+    final_data = None
+
+# Stream and capture the final tool result
+    async for chunk in react_agent.astream({"messages": user}, stream_mode="updates"):
+        # Check if this chunk contains tool messages
+        if 'tools' in chunk and 'messages' in chunk['tools']:
+            for message in chunk['tools']['messages']:
+                # Check if this is the genie_get_query_result tool message
+                if hasattr(message, 'name') and message.name == 'genie_get_query_result':
+                    try:
+                        # Parse the JSON content from the tool result
+                        tool_result = json.loads(message.content)
+                        if 'manifest' in tool_result and 'result' in tool_result:
+                            final_data = tool_result
+                            print(f"Found final data with {tool_result['result']['row_count']} rows")
+                            break  # Exit immediately after getting the data
+                    except json.JSONDecodeError as e:
+                        print(f"Failed to parse JSON: {e}")
+                        continue
+        
+    # Exit after getting the final tool result
+        if final_data:
+            break
+            
+    if final_data:
+        columns_info = final_data['manifest']['schema']
+        data = final_data['result']['data_array']
+        
+        state["topic_assets"] = f"""Content for the program generation is defined below 
+        schema of the columns of the content is ```{columns_info}```
+        
+        data:
+        ```
+        {data}
+        ```
+        """
+        print(f"Successfully extracted {len(data)} records")
+        print(f"Schema columns: {[col['name'] for col in columns_info['columns']]}")
+    else:
+        print("Failed to extract data from tools")
+        state["topic_assets"] = "No data found"
+    
+    end_time = time.time()
+    print(f"time taken by fetch_asset_node is {end_time - start_time} seconds")
     return state
 
 def validate_requirements_node(state: AgentState) -> AgentState:
@@ -351,69 +390,6 @@ def validate_requirements_node(state: AgentState) -> AgentState:
     end=time.time()
     print(f"time taken to validate : {end-start}")
     return state
-
-# def generate_program_node(state: AgentState) -> AgentState:
-#     req = state["requirements"]
-#     content=state["topic_assets"]
-#     system_prompt = """
-# You are an expert curriculum designer.  
-# Your job is to generate a **full, richly detailed learning program** using only the content provided.  
-# - Do not shorten or omit any topic or asset information.  
-# - Preserve all provided IDs and descriptions exactly as given.  
-# - Order topics and assets logically.  
-# - If the provided content doesn't support the user's requirements, respond:  
-#   “Sorry, no content found which can fulfill your requirements.”
-# Respond **only** with the final program JSON—no extra commentary.
-# """
-
-    
-#     user_prompt = f"""
-# User requirements: {json.dumps(req.__dict__)}  
-# Available content: {json.dumps(content)}
-
-# Your output must strictly follow this JSON schema:
-
-# {{
-#   "program_id": "<unique program ID>",
-#   "title": "<program title>",
-#   "description": "<brief program description>",
-#   "duration_hours": <total hours as integer>,
-#   "skills": [<list of skill strings>],
-#   "program": [
-#     {{
-#       "topic_id": "<TopicId>",
-#       "title": "<topic title>",
-#       "description": "<topic description>",
-#       "asset": [
-#         {{
-#           "asset_id": "<AssetId>",
-#           "title": "<asset title>",
-#           "description": "<asset description>"
-#         }},
-#         ...
-#       ]
-#     }},
-#     ...
-#   ]
-# }}
-
-# Generate a full program using the **entire relevant content**, ensuring:
-# - All topics and assets which are relevant must be included (no skipping).  
-# - IDs and descriptions remain unchanged.  
-# - Topics and assets are ordered logically.  
-
-# Return **only** the JSON.
-# """
-
-
-#     response = call_llm([
-#         {"role": "system", "content": system_prompt},
-#         {"role": "user", "content": user_prompt}
-#     ], max_tokens=8192)
-
-#     state["messages"].append({"role": "assistant", "content": response})
-#     state["step_completed"] = True
-#     return state
 
 def decode_json(text):
     start=time.time()

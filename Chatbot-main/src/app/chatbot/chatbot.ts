@@ -185,6 +185,13 @@ export class Chatbot {
       });
       return;
     }
+    //   if (responseType === 'error') {
+    //   this.chatService.addBotResponse({
+    //     type: responseType,
+    //     message: responseData.message || 'Sorry, I have failed to generate the Programme',
+    //   });
+    //   return;
+    // }
 
     // fallback
     this.chatService.addBotResponse({
@@ -192,13 +199,6 @@ export class Chatbot {
       suggestedPrograms: [],
     });
   }
-
-    // fallback
-  //   this.chatService.addBotResponse({
-  //     message: 'Sorry, I didn’t understand that.',
-  //     suggestedPrograms: [],
-  //   });
-  // }
 
   private scrollToBottom() {
     try {

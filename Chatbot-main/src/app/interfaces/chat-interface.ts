@@ -6,7 +6,7 @@ export interface ChatMessage {
   content: string;
   sender: 'user' | 'bot' | 'typing';
   timestamp: Date;
-  type: 'text' | 'course-suggestion' | 'generating' | 'program';
+  type: 'text' | 'course-suggestion' | 'generating' | 'program' | 'error';
   programs?: Program[];
 }
 

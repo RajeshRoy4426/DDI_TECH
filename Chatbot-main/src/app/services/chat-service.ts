@@ -49,7 +49,13 @@ export class ChatService {
             this.addBotResponse(res);
           } else if (res.type === 'generating') {
             setTimeout(poll, pollInterval);
-          } else {
+          }
+          else if (res.type === 'error') {
+             this.addBotResponse({
+              message: 'Sorry, I was unable to generate the program. Please try again.',
+              suggestedPrograms: [],
+            });}
+            else {
             this.message.warning('Unexpected response type.');
           }
         } catch (e) {
@@ -60,6 +66,10 @@ export class ChatService {
       error: (err) => {
         console.error('Polling error:', err);
         this.message.error('Error checking program status.');
+          this.addBotResponse({
+          message: 'Sorry, I was unable to generate the program. Please try again.',
+          suggestedPrograms: [],
+        });
       },
     });
   };
@@ -171,6 +181,27 @@ export class ChatService {
     this.pollForProgram(response.data.task_id);
     return;
   }
+  //   if (response.type === 'error') {
+  //   const errorMessage: ChatMessage = {
+  //     id: this.generateId(),
+  //     content: response.data?.status || 'An unknown error occurred.', // Use response.data directly
+  //     type: 'error',
+  //     sender: 'bot',
+  //     timestamp: new Date(),
+  //   };
+
+  //   this.chatMessages.update((messages) => [
+  //     ...messages.filter(
+  //       (msg) =>
+  //         msg.sender !== 'typing' &&
+  //         !(msg.sender === 'bot' && msg.type === 'error')
+  //     ),
+  //     errorMessage,
+  //   ]);
+
+  //   this.storageService.setItem('chatMessages', this.chatMessages());
+  //   return;
+  // }
 
     const botMessage: ChatMessage = {
       id: response.id || this.generateId(),
@@ -185,8 +216,9 @@ export class ChatService {
     this.chatMessages.update((messages) => [
       ...messages.filter(
         (msg) =>
-          msg.sender !== 'typing' &&
-          !(msg.sender === 'bot' && msg.type === 'generating')
+          msg.sender !== 'typing' 
+        // &&
+        //   !(msg.sender === 'bot' && msg.type === 'generating')
       ),
       botMessage,
     ]);

@@ -4,7 +4,6 @@ SQLAlchemy
 # Core LangChain components
 langchain
 langgraph
-
 langgraph-prebuilt  # if you're using langgraph.prebuilt.create_react_agent
 
 # OpenAI SDKs

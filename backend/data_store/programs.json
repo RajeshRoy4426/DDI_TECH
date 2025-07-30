@@ -5321,5 +5321,2412 @@
         ]
       }
     ]
+  },
+  {
+    "program_id": "3d32fe8b-e517-486e-a878-438827d42924",
+    "title": "Decision Making for Leaders",
+    "description": "A comprehensive program on decision making for leaders, covering various aspects and skills required for effective decision making.",
+    "duration_hours": 20,
+    "skills": [
+      "Decision Making",
+      "Leadership",
+      "Problem Solving"
+    ],
+    "program": [
+      {
+        "topic_id": "0093D7E1-C361-4D9A-86AA-036B3006AAA9",
+        "title": "[IDP] Decision Making",
+        "asset": [
+          {
+            "asset_id": "BECB6130-A0BD-439E-55A3-08DA66921728",
+            "title": "Conversations with Courage and Candor (microcourse)"
+          },
+          {
+            "asset_id": "CA991733-ECAA-4015-FD3D-08D58B4515E6",
+            "title": "Making High-Quality Decisions (online course)"
+          },
+          {
+            "asset_id": "CDE06645-9149-4854-A8A1-08D43AF91069",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "E09F24C9-67EE-4A61-D0C4-08D4665DE993",
+            "title": "Making High-Quality Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "94125C4F-A304-4C5F-B8D94125C4F",
+            "title": "Decision-Making Planner"
+          },
+          {
+            "asset_id": "86256AF7-2592-4F5D-B8D7-08D480D29D6E",
+            "title": "Writing Problem/Opportunity Summaries"
+          },
+          {
+            "asset_id": "C4D224B1-AA06-4978-ADF2-08D4924786EC",
+            "title": "Interview on Culture and Decision Making"
+          },
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "280CCD2F-3428-473A-A5B7-2256BD769109",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "589B8344-7913-44B6-BF3F-60AF148B88D7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "1A688F54-91D9-4876-77C6-08D88AED5BC3",
+        "title": "Making High Quality Decisions - Pre work",
+        "asset": [
+          {
+            "asset_id": "9E1AE62E-80AA-44F6-CEEE-08D45BFA8054",
+            "title": "Making High-Quality Decisions Course Prep"
+          }
+        ]
+      },
+      {
+        "topic_id": "5EC245C3-BED7-4B39-CC8E-08D623BD1CCA",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          }
+        ]
+      },
+      {
+        "topic_id": "654664A5-0510-4709-84CF-74190C81AD77",
+        "title": "Month 6",
+        "asset": [
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "91E7FD85-A53C-49FD-8B39-39ACE8A4F5CE",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "926347F7-F285-4C35-BF2B-2A1B42275A82",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          }
+        ]
+      },
+      {
+        "topic_id": "9C758DCF-C257-4D9D-8A3E-C7700D05FB0D",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "A9680721-B2D8-412A-9828-80F57A0DCFDB",
+        "title": "Enhancing Skills for Managers: Decision Making",
+        "asset": [
+          {
+            "asset_id": "F811AE6D-C390-4AD3-39FD-08D5A4F34A1B",
+            "title": "What's On Your Radar? (microcourse)"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "AC15AAB7-B4D6-448A-D54C-08D5310D54CD",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "B99EEDFC-4748-4937-883E-B293397FBE04",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "07A8E21F-08A1-43A6-A52D-37A826866BC7",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          }
+        ]
+      },
+      {
+        "topic_id": "D35302E4-BDBB-4CC9-91E3-813874F4EF3C",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "2E4F832D-4FE9-4CF7-50CA-08D5CC8B2508",
+            "title": "Piloting Change"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      },
+      {
+        "topic_id": "D8207DE9-F84B-4DEF-82B3-51452F98C3BB",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          }
+        ]
+      },
+      {
+        "topic_id": "E073C1D1-92C3-4C47-D711-08DB0E9FEC05",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          }
+        ]
+      },
+      {
+        "topic_id": "E2C4AE8D-CD50-4931-254B-08DB9AA88270",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "F5B00D86-4471-41B3-AE96-599DE6A54E6E",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "1337EDB4-1F41-4DA2-ABF3-64676A8FA1D0",
+            "title": "Understanding Decision Making Tendencies - Managing Tendencies Handout"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          }
+        ]
+      },
+      {
+        "topic_id": "F8223B24-B0EB-4174-8988-08D41225BEF7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          }
+        ]
+      },
+      {
+        "topic_id": "FE6571C5-F6DD-4267-94C5-05066C3C61C8",
+        "title": "Accelerating Business Decisions 1",
+        "asset": [
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program_id": "b0a61fa3-4122-4979-970d-8b48d7c9e0e1",
+    "title": "Decision Making for Leadership",
+    "description": "A comprehensive program on decision making for leaders, covering various aspects and tendencies.",
+    "duration_hours": 20,
+    "skills": [
+      "Decision Making",
+      "Leadership"
+    ],
+    "program": [
+      {
+        "topic_id": "0093D7E1-C361-4D9A-86AA-036B3006AAA9",
+        "title": "[IDP] Decision Making",
+        "asset": [
+          {
+            "asset_id": "BECB6130-A0BD-439E-55A3-08DA66921728",
+            "title": "Conversations with Courage and Candor (microcourse)"
+          },
+          {
+            "asset_id": "CA991733-ECAA-4015-FD3D-08D58B4515E6",
+            "title": "Making High-Quality Decisions (online course)"
+          },
+          {
+            "asset_id": "CDE06645-9149-4854-A8A1-08D43AF91069",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "E09F24C9-67EE-4A61-D0C4-08D4665DE993",
+            "title": "Making High-Quality Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "94125C4F-A304-4C5F-B8D4-08D480D29D6E5",
+            "title": "Decision-Making Planner"
+          },
+          {
+            "asset_id": "86256AF7-2592-4F5D-B8D7-08D480D29D6E",
+            "title": "Writing Problem/Opportunity Summaries"
+          },
+          {
+            "asset_id": "C4D224B1-AA06-4978-ADF2-08D4924786EC",
+            "title": "Interview on Culture and Decision Making"
+          },
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "280CCD2F-3428-473A-A5B7-2256BD769109",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "589B8344-7913-44B6-BF3F-60AF148B88D7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "1A688F54-91D9-4876-77C6-08D88AED5BC3",
+        "title": "Making High Quality Decisions - Pre work",
+        "asset": [
+          {
+            "asset_id": "9E1AE62E-80AA-44F6-CEEE-08D45BFA8054",
+            "title": "Making High-Quality Decisions Course Prep"
+          }
+        ]
+      },
+      {
+        "topic_id": "A9680721-B2D8-412A-9828-80F57A0DCFDB",
+        "title": "Enhancing Skills for Managers: Decision Making",
+        "asset": [
+          {
+            "asset_id": "F811AE6D-C390-4AD3-39FD-08D5A4F34A1B",
+            "title": "What's On Your Radar? (microcourse)"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "654664A5-0510-4709-84CF-74190C81AD77",
+        "title": "Month 6",
+        "asset": [
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "91E7FD85-A53C-49FD-8B39-39ACE8A4F5CE",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "926347F7-F285-4C35-BF2B-2A1B42275A82",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          }
+        ]
+      },
+      {
+        "topic_id": "9C758DCF-C257-4D9D-8A3E-C7700D05FB0D",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "AC15AAB7-B4D6-448A-D54C-08D5310D54CD",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "B99EEDFC-4748-4937-883E-B293397FBE04",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "07A8E21F-08A1-43A6-A52D-37A826866BC7",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          }
+        ]
+      },
+      {
+        "topic_id": "D35302E4-BDBB-4CC9-91E3-813874F4EF3C",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "2E4F832D-4FE9-4CF7-50CA-08D5CC8B2508",
+            "title": "Piloting Change"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      },
+      {
+        "topic_id": "D8207DE9-F84B-4DEF-82B3-51452F98C3BB",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          }
+        ]
+      },
+      {
+        "topic_id": "E073C1D1-92C3-4C47-D711-08DB0E9FEC05",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          }
+        ]
+      },
+      {
+        "topic_id": "E2C4AE8D-CD50-4931-254B-08DB9AA88270",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "F5B00D86-4471-41B3-AE96-599DE6A54E6E",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "1337EDB4-1F41-4DA2-ABF3-64676A8FA1D0",
+            "title": "Understanding Decision Making Tendencies - Managing Tendencies Handout"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          }
+        ]
+      },
+      {
+        "topic_id": "F8223B24-B0EB-4174-8988-08D41225BEF7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          }
+        ]
+      },
+      {
+        "topic_id": "FE6571C5-F6DD-4267-94C5-05066C3C61C8",
+        "title": "Accelerating Business Decisions 1",
+        "asset": [
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program_id": "4ae648a1-67c8-423f-9668-0a5cde42bc8e",
+    "title": "Decision Making for Leadership",
+    "description": "A comprehensive program on decision making for leaders",
+    "duration_hours": 20,
+    "skills": [
+      "Decision Making",
+      "Leadership"
+    ],
+    "program": [
+      {
+        "topic_id": "0093D7E1-C361-4D9A-86AA-036B3006AAA9",
+        "title": "[IDP] Decision Making",
+        "asset": [
+          {
+            "asset_id": "BECB6130-A0BD-439E-55A3-08DA66921728",
+            "title": "Conversations with Courage and Candor (microcourse)"
+          },
+          {
+            "asset_id": "CA991733-ECAA-4015-FD3D-08D58B4515E6",
+            "title": "Making High-Quality Decisions (online course)"
+          },
+          {
+            "asset_id": "CDE06645-9149-4854-A8A1-08D43AF91069",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "E09F24C9-67EE-4A61-D0C4-08D4665DE993",
+            "title": "Making High-Quality Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "94125C4F-A304-4C5F-B8D4-08D480D29D6E",
+            "title": "Decision-Making Planner"
+          },
+          {
+            "asset_id": "86256AF7-2592-4F5D-B8D7-08D480D29D6E",
+            "title": "Writing Problem/Opportunity Summaries"
+          },
+          {
+            "asset_id": "C4D224B1-AA06-4978-ADF2-08D4924786EC",
+            "title": "Interview on Culture and Decision Making"
+          },
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "280CCD2F-3428-473A-A5B7-2256BD769109",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "589B8344-7913-44B6-BF3F-60AF148B88D7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "1A688F54-91D9-4876-77C6-08D88AED5BC3",
+        "title": "Making High Quality Decisions - Pre work",
+        "asset": [
+          {
+            "asset_id": "9E1AE62E-80AA-44F6-CEEE-08D45BFA8054",
+            "title": "Making High-Quality Decisions Course Prep"
+          }
+        ]
+      },
+      {
+        "topic_id": "5EC245C3-BED7-4B39-CC8E-08D623BD1CCA",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          }
+        ]
+      },
+      {
+        "topic_id": "654664A5-0510-4709-84CF-74190C81AD77",
+        "title": "Month 6",
+        "asset": [
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "91E7FD85-A53C-49FD-8B39-39ACE8A4F5CE",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "926347F7-F285-4C35-BF2B-2A1B42275A82",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          }
+        ]
+      },
+      {
+        "topic_id": "9C758DCF-C257-4D9D-8A3E-C7700D05FB0D",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "A9680721-B2D8-412A-9828-80F57A0DCFDB",
+        "title": "Enhancing Skills for Managers: Decision Making",
+        "asset": [
+          {
+            "asset_id": "F811AE6D-C390-4AD3-39FD-08D5A4F34A1B",
+            "title": "What's On Your Radar? (microcourse)"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "AC15AAB7-B4D6-448A-D54C-08D5310D54CD",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "B99EEDFC-4748-4937-883E-B293397FBE04",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "07A8E21F-08A1-43A6-A52D-37A826866BC7",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies Handout"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          }
+        ]
+      },
+      {
+        "topic_id": "D35302E4-BDBB-4CC9-91E3-813874F4EF3C",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "2E4F832D-4FE9-4CF7-50CA-08D5CC8B2508",
+            "title": "Piloting Change"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      },
+      {
+        "topic_id": "D8207DE9-F84B-4DEF-82B3-51452F98C3BB",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          }
+        ]
+      },
+      {
+        "topic_id": "E073C1D1-92C3-4C47-D711-08DB0E9FEC05",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          }
+        ]
+      },
+      {
+        "topic_id": "E2C4AE8D-CD50-4931-254B-08DB9AA88270",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "F5B00D86-4471-41B3-AE96-599DE6A54E6E",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "1337EDB4-1F41-4DA2-ABF3-64676A8FA1D0",
+            "title": "Understanding Decision Making Tendencies - Managing Tendencies Handout"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          }
+        ]
+      },
+      {
+        "topic_id": "F8223B24-B0EB-4174-8988-08D41225BEF7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          }
+        ]
+      },
+      {
+        "topic_id": "FE6571C5-F6DD-4267-94C5-05066C3C61C8",
+        "title": "Accelerating Business Decisions 1",
+        "asset": [
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program_id": "735311e4-7814-4bad-9c48-d5d713ce2af6",
+    "title": "Decision Making for Leadership",
+    "description": "A comprehensive program on decision making for leadership development",
+    "duration_hours": 20,
+    "skills": [
+      "Decision Making",
+      "Leadership"
+    ],
+    "program": [
+      {
+        "topic_id": "0093D7E1-C361-4D9A-86AA-036B3006AAA9",
+        "title": "[IDP] Decision Making",
+        "asset": [
+          {
+            "asset_id": "BECB6130-A0BD-439E-55A3-08DA66921728",
+            "title": "Conversations with Courage and Candor (microcourse)"
+          },
+          {
+            "asset_id": "CA991733-ECAA-4015-FD3D-08D58B4515E6",
+            "title": "Making High-Quality Decisions (online course)"
+          },
+          {
+            "asset_id": "CDE06645-9149-4854-A8A1-08D43AF91069",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "E09F24C9-67EE-4A61-D0C4-08D4665DE993",
+            "title": "Making High-Quality Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "94125C4F-A304-4C5F-B8D4-08D480D29D6E",
+            "title": "Decision-Making"
+          },
+          {
+            "asset_id": "86256AF7-2592-4F5D-B8D7-08D480D29D6E",
+            "title": "Writing Problem/Opportunity Summaries"
+          },
+          {
+            "asset_id": "C4D224B1-AA06-4978-ADF2-08D4924786EC",
+            "title": "Interview on Culture and Decision Making"
+          },
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "1A688F54-91D9-4876-77C6-08D88AED5BC3",
+        "title": "Making High Quality Decisions - Pre work",
+        "asset": [
+          {
+            "asset_id": "9E1AE62E-80AA-44F6-CEEE-08D45BFA8054",
+            "title": "Making High-Quality Decisions Course Prep"
+          }
+        ]
+      },
+      {
+        "topic_id": "280CCD2F-3428-473A-A5B7-2256BD769109",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "589B8344-7913-44B6-BF3F-60AF148B88D7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "5EC245C3-BED7-4B39-CC8E-08D623BD1CCA",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          }
+        ]
+      },
+      {
+        "topic_id": "654664A5-0510-4709-84CF-74190C81AD77",
+        "title": "Month 6",
+        "asset": [
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "91E7FD85-A53C-49FD-8B39-39ACE8A4F5CE",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "926347F7-F285-4C35-BF2B-2A1B42275A82",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          }
+        ]
+      },
+      {
+        "topic_id": "9C758DCF-C257-4D9D-8A3E-C7700D05FB0D",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "A9680721-B2D8-412A-9828-80F57A0DCFDB",
+        "title": "Enhancing Skills for Managers: Decision Making",
+        "asset": [
+          {
+            "asset_id": "F811AE6D-C390-4AD3-39FD-08D5A4F34A1B",
+            "title": "What's On Your Radar? (microcourse)"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "AC15AAB7-B4D6-448A-D54C-08D5310D54CD",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "B99EEDFC-4748-4937-883E-B293397FBE04",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "07A8E21F-08A1-43A6-A52D-37A826866BC7",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          }
+        ]
+      },
+      {
+        "topic_id": "D35302E4-BDBB-4CC9-91E3-813874F4EF3C",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "2E4F832D-4FE9-4CF7-50CA-08D5CC8B2508",
+            "title": "Piloting Change"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      },
+      {
+        "topic_id": "D8207DE9-F84B-4DEF-82B3-51452F98C3BB",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          }
+        ]
+      },
+      {
+        "topic_id": "E073C1D1-92C3-4C47-D711-08DB0E9FEC05",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          }
+        ]
+      },
+      {
+        "topic_id": "E2C4AE8D-CD50-4931-254B-08DB9AA88270",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "F5B00D86-4471-41B3-AE96-599DE6A54E6E",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "1337EDB4-1F41-4DA2-ABF3-64676A8FA1D0",
+            "title": "Understanding Decision Making Tendencies - Managing Tendencies Handout"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          }
+        ]
+      },
+      {
+        "topic_id": "F8223B24-B0EB-4174-8988-08D41225BEF7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          }
+        ]
+      },
+      {
+        "topic_id": "FE6571C5-F6DD-4267-94C5-05066C3C61C8",
+        "title": "Accelerating Business Decisions 1",
+        "asset": [
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "program_id": "74148a34-38e1-4341-9c32-36e8d193ba29",
+    "title": "Decision Making for Leadership",
+    "description": "A comprehensive program on decision making for leaders, covering various aspects and tendencies.",
+    "duration_hours": 20,
+    "skills": [
+      "Decision Making",
+      "Leadership"
+    ],
+    "program": [
+      {
+        "topic_id": "0093D7E1-C361-4D9A-86AA-036B3006AAA9",
+        "title": "[IDP] Decision Making",
+        "asset": [
+          {
+            "asset_id": "BECB6130-A0BD-439E-55A3-08DA66921728",
+            "title": "Conversations with Courage and Candor (microcourse)"
+          },
+          {
+            "asset_id": "CA991733-ECAA-4015-FD3D-08D58B4515E6",
+            "title": "Making High-Quality Decisions (online course)"
+          },
+          {
+            "asset_id": "CDE06645-9149-4854-A8A1-08D43AF91069",
+            "title": "Feedback Survey"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "E09F24C9-67EE-4A61-D0C4-08D4665DE993",
+            "title": "Making High-Quality Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "94125C4F-A304-4C5F-B8D4-08D480D29D6E",
+            "title": "Decision-Making Planner"
+          },
+          {
+            "asset_id": "86256AF7-2592-4F5D-B8D7-08D480D29D6E",
+            "title": "Writing Problem/Opportunity Summaries"
+          },
+          {
+            "asset_id": "C4D224B1-AA06-4978-ADF2-08D4924786EC",
+            "title": "Interview on Culture and Decision Making"
+          },
+          {
+            "asset_id": "0D697D8F-CEB0-49B2-8209-08D62D5375DA",
+            "title": "Making Accelerated Decisions (microcourse)"
+          }
+        ]
+      },
+      {
+        "topic_id": "280CCD2F-3428-473A-A5B7-2256BD769109",
+        "title": "Understanding Decision-Making Tendencies",
+        "asset": [
+          {
+            "asset_id": "9FB4E2D6-53A8-42EB-0AD8-08DB0E9F87E3",
+            "title": "Managing Tendencies"
+          },
+          {
+            "asset_id": "8AA4EDD8-3759-4195-8CC7-CAD1F6FD35A2",
+            "title": "Understanding Decision Making Tendencies- Managing Tendencies"
+          },
+          {
+            "asset_id": "423F32BE-37A7-4241-BA66-20DE6AD28319",
+            "title": "Decision Self-Audit"
+          },
+          {
+            "asset_id": "BD5750CD-2A49-4EDC-9474-08DB1489659B",
+            "title": "Understanding Decision-Making Tendencies Insights Report"
+          },
+          {
+            "asset_id": "FDAD396B-27AD-4908-A877-6B638F0ED4B4",
+            "title": "Using Fear to Make Better Decisions"
+          },
+          {
+            "asset_id": "9B4EA228-1BFA-459E-F09C-08DB0E9F4CA8",
+            "title": "Understanding Decision-Making Tendencies Part 1: Self-Directed Learning"
+          },
+          {
+            "asset_id": "9971D219-E0F2-41AA-2A51-08D8FFD77AD2",
+            "title": "How Leaders Can Make Better Decisions"
+          },
+          {
+            "asset_id": "FD676E73-52A0-4CCB-7E9E-08DB13B2F163",
+            "title": "Leadership Personality Insights"
+          },
+          {
+            "asset_id": "13DB2E7E-2556-4394-0761-08DB2588BE08",
+            "title": "Making Sense of Personality Insights"
+          }
+        ]
+      },
+      {
+        "topic_id": "589B8344-7913-44B6-BF3F-60AF148B88D7",
+        "title": "Accelerating Business Decisions",
+        "asset": [
+          {
+            "asset_id": "6B9C74E5-D0D4-40C6-B8D3-08D480D29D6E",
+            "title": "Accelerating Business Decisions - Knowledge Check"
+          },
+          {
+            "asset_id": "E0E93C70-29F9-479F-1388-08D4BF2595DE",
+            "title": "Accelerating Business Decisions Course Prep"
+          },
+          {
+            "asset_id": "C00F69F9-DEC1-462A-50E6-08D3E7D42526",
+            "title": "Intuition Interview"
+          },
+          {
+            "asset_id": "B2EA7330-B6CA-49DC-50E2-08D3E7D42526",
+            "title": "Interview Your Manager"
+          },
+          {
+            "asset_id": "0D4077E5-6660-41BF-21E5-08D45F0EF060",
+            "title": "Decision Guide"
+          },
+          {
+            "asset_id": "66398050-74DC-4B77-B8DB-08D480D29D6E",
+            "title": "Feedback Survey"
+          }
+        ]
+      },
+      {
+        "topic_id": "A9680721-B2D8-412A-9828-80F57A0DCFDB",
+        "title": "Enhancing Skills for Managers: Decision Making",
+        "asset": [
+          {
+            "asset_id": "F811AE6D-C390-4AD3-39FD-08D5A4F34A1B",
+            "title": "What's On Your Radar? (microcourse)"
+          },
+          {
+            "asset_id": "643D5312-B2C4-44FA-895B-50D3158CE47F",
+            "title": "Making Intentional Decisions (microcourse)"
+          }
+        ]
+      }
+    ]
   }
 ]
