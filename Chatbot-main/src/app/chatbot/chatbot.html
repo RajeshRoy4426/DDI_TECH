@@ -76,6 +76,7 @@
                   <label
                     nz-radio
                     [nzValue]="option.value"
+                    [nzDisabled]="isLoading"
                     *ngFor="let option of message.options"
                   >
                     {{ option.label }}
