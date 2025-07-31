@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Config } from './config';
 import { Storage } from './storage';
 import { NzMessageService } from 'ng-zorro-antd/message';
+import { Subject, takeUntil } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -14,6 +15,7 @@ export class ChatService {
   private storageService = inject(Storage);
   private message = inject(NzMessageService);
   private chatMessages = signal<ChatMessage[]>([]);
+  private cancelPending$ = new Subject<void>();
 
   constructor() {
     const chatMessages = this.storageService.getItem('chatMessages');
@@ -41,7 +43,7 @@ export class ChatService {
         return;
       }
 
-      this.http.get(URL, { responseType: 'text' }).subscribe({
+      this.http.get(URL, { responseType: 'text' }).pipe(takeUntil(this.cancelPending$)).subscribe({
         next: (raw) => {
           try {
             const res = JSON.parse(raw);
@@ -253,8 +255,12 @@ export class ChatService {
   }
 
   clearChat() {
+    this.cancelPending$.next();
+    this.cancelPending$.complete();
     this.chatMessages.set([]);
     this.storageService.clear();
     this.initializeChat();
   }
+
+
 }

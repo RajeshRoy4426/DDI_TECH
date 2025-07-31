@@ -83,7 +83,7 @@
                   <label
                     nz-radio
                     [nzValue]="option.value"
-                    [nzDisabled]="disableRadio"
+                    [nzDisabled]="option?.disabled || false"
                     *ngFor="let option of message.options"
                   >
                     {{ option.label }}

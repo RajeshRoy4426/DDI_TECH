@@ -73,12 +73,12 @@ export class Chatbot {
   isOkLoading = false;
   appInfo: any = null;
   radioValue: string = '';
-  disableRadio = false;
 
   constructor() {
     effect(
       () => {
         this.chatMessages = this.chatService.getMessages();
+
         this.shouldScrollToBottom = true;
       },
       { allowSignalWrites: true }
@@ -108,6 +108,7 @@ export class Chatbot {
         this.chatService.clearChatApi().subscribe({
           next: (res: any) => {
             if (res) {
+              this.radioValue = '';
               this.isOkLoading = false;
               this.chatService.clearChat();
             }
@@ -184,7 +185,7 @@ export class Chatbot {
     }
 
     if (responseType === 'basic') {
-      let botResponse:any = {
+      let botResponse: any = {
         id: responseData.id,
         type: responseType,
         message: responseData.message || 'Okay, let me know how I can help!',
@@ -217,8 +218,15 @@ export class Chatbot {
 
   onOptionSelected(event: any) {
     const selectedOption = event;
+    this.chatMessages.forEach((message) => {
+      if (message.options && message.options.length > 0) {
+        message.options.forEach((option) => {
+          option.disabled = true;
+        });
+      }
+    });
     this.currentMessage = selectedOption;
-    this.disableRadio = true;
+
     this.sendMessage();
   }
 
