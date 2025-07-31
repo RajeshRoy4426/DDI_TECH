@@ -73,6 +73,7 @@ export class Chatbot {
   isOkLoading = false;
   appInfo: any = null;
   radioValue: string = '';
+  disableRadio = false;
 
   constructor() {
     effect(
@@ -217,6 +218,7 @@ export class Chatbot {
   onOptionSelected(event: any) {
     const selectedOption = event;
     this.currentMessage = selectedOption;
+    this.disableRadio = true;
     this.sendMessage();
   }
 
