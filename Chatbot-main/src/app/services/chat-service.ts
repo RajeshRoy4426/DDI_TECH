@@ -30,8 +30,12 @@ export class ChatService {
     const pollInterval = 10000; // 10 seconds
     const timeoutMs = 8 * 60 * 1000; // 8 minutes
     const startTime = Date.now();
+    let isCancelled = false;
+
+    this.cancelPending$ = new Subject<void>(); // Reset subject before starting new poll
 
     const poll = () => {
+      if (isCancelled) return;
       const elapsed = Date.now() - startTime;
       const URL = `${this.configService.apiBaseUrl}/api/program-status/${taskId}`;
       console.log(
@@ -43,40 +47,50 @@ export class ChatService {
         return;
       }
 
-      this.http.get(URL, { responseType: 'text' }).pipe(takeUntil(this.cancelPending$)).subscribe({
-        next: (raw) => {
-          try {
-            const res = JSON.parse(raw);
+      this.http
+        .get(URL, { responseType: 'text' })
+        .pipe(takeUntil(this.cancelPending$))
+        .subscribe({
+          next: (raw) => {
+            if (isCancelled) return;
+            try {
+              const res = JSON.parse(raw);
 
-            if (res.type === 'program') {
-              this.addBotResponse(res);
-            } else if (res.type === 'generating') {
-              setTimeout(poll, pollInterval);
-            } else if (res.type === 'error') {
-              this.addBotResponse({
-                message:
-                  'Sorry, I was unable to generate the program. Please try again.',
-                suggestedPrograms: [],
-              });
-            } else {
-              // this.message.warning('Unexpected response type.');
+              if (res.type === 'program') {
+                this.addBotResponse(res);
+              } else if (res.type === 'generating') {
+                setTimeout(poll, pollInterval);
+              } else if (res.type === 'error') {
+                this.addBotResponse({
+                  message:
+                    'Sorry, I was unable to generate the program. Please try again.',
+                  suggestedPrograms: [],
+                });
+              } else {
+                // this.message.warning('Unexpected response type.');
+              }
+            } catch (e) {
+              // console.error('Failed to parse JSON:', e, raw);
+              // this.message.error('Invalid response format from server.');
             }
-          } catch (e) {
-            // console.error('Failed to parse JSON:', e, raw);
-            // this.message.error('Invalid response format from server.');
-          }
-        },
-        error: (err) => {
-          console.error('Polling error:', err);
-          this.message.error('Error checking program status.');
-          this.addBotResponse({
-            message:
-              'Sorry, I was unable to generate the program. Please try again.',
-            suggestedPrograms: [],
-          });
-        },
-      });
+          },
+          error: (err) => {
+            if (isCancelled) return;
+            console.error('Polling error:', err);
+            this.message.error('Error checking program status.');
+            this.addBotResponse({
+              message:
+                'Sorry, I was unable to generate the program. Please try again.',
+              suggestedPrograms: [],
+            });
+          },
+        });
     };
+
+    // Subscribe to cancellation and set flag
+    this.cancelPending$.subscribe(() => {
+      isCancelled = true;
+    });
 
     poll();
   }
@@ -261,6 +275,4 @@ export class ChatService {
     this.storageService.clear();
     this.initializeChat();
   }
-
-
 }
