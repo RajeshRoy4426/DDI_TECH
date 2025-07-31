@@ -227,7 +227,6 @@
 .typing-indicator {
   display: flex;
   gap: 5px;
-  padding: 8px 12px;
   border-radius: 20px;
   width: fit-content;
   margin: 10px 0;
@@ -239,6 +238,33 @@
   background-color: #4f46e5;
   border-radius: 50%;
   animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typing-indicator div .dots::after {
+  content: "";
+  display: inline-block;
+  animation: dots 1.5s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
 }
 
 .typing-indicator span:nth-child(1) {

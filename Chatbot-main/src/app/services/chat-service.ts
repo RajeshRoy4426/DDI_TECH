@@ -45,7 +45,6 @@ export class ChatService {
         next: (raw) => {
           try {
             const res = JSON.parse(raw);
-            console.log('Poll response:', res);
 
             if (res.type === 'program') {
               this.addBotResponse(res);
@@ -58,11 +57,11 @@ export class ChatService {
                 suggestedPrograms: [],
               });
             } else {
-              this.message.warning('Unexpected response type.');
+              // this.message.warning('Unexpected response type.');
             }
           } catch (e) {
-            console.error('Failed to parse JSON:', e, raw);
-            this.message.error('Invalid response format from server.');
+            // console.error('Failed to parse JSON:', e, raw);
+            // this.message.error('Invalid response format from server.');
           }
         },
         error: (err) => {
