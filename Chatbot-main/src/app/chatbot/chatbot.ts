@@ -226,7 +226,7 @@ export class Chatbot {
       }
     });
     this.currentMessage = selectedOption;
-
+    this.radioValue = '';
     this.sendMessage();
   }
 
