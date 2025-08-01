@@ -26,8 +26,8 @@
           </nz-tag>
         </div>
         <div class="course-tags">
-          <nz-tag *ngFor="let tag of program.skills" [nzColor]="'blue'">
-            {{ tag }}
+          <nz-tag *ngFor="let skill of skillTags" [nzColor]="skill.color">
+            {{ skill.name }}
           </nz-tag>
         </div>
       </nz-skeleton>

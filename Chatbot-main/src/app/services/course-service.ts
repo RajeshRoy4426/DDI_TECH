@@ -73,4 +73,27 @@ export class CourseService {
   getProgramDetails() {
     return this.programDetails();
   }
+
+  /**
+   * Get a random color for the course card to show in the tag
+   * @returns string
+   */
+  getRandomColor(): string {
+    const colors = [
+      'pink',
+      'red',
+      'yellow',
+      'orange',
+      'cyan',
+      'green',
+      'blue',
+      'purple',
+      'geekblue',
+      'magenta',
+      'volcano',
+      'gold',
+      'lime',
+    ];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
 }

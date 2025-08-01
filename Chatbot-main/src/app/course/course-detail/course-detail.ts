@@ -51,9 +51,20 @@ export class CourseDetail {
   isLoading = false;
   private destroy$ = new Subject<void>();
   appInfo: any = null;
+  skillTags: { name: string; color: string }[] = [];
   constructor() {
     effect(() => {
       this.program = this.courseService.getProgramDetails();
+      if (
+        this.program &&
+        this.program.skills &&
+        this.program.skills.length > 0
+      ) {
+        this.skillTags = this.program.skills.map((skill) => ({
+          name: skill,
+          color: this.courseService.getRandomColor(),
+        }));
+      }
     });
   }
 
@@ -64,7 +75,6 @@ export class CourseDetail {
         this.loadProgramDetails(params['id']);
       }
     });
-
   }
 
   ngOnDestroy(): void {
@@ -72,6 +82,10 @@ export class CourseDetail {
     this.destroy$.complete();
   }
 
+  /**
+   * Load program details from server
+   * @param courseId - The course ID to load
+   */
   loadProgramDetails(courseId: string): void {
     this.isLoading = true;
 
@@ -102,27 +116,10 @@ export class CourseDetail {
       });
   }
 
+  /**
+   * Navigate to home page
+   */
   goBack(): void {
     this.router.navigate(['/']);
-  }
-
-  enrollInCourse(): void {
-    if (this.program) {
-      this.message.success(`Successfully enrolled in ${this.program.title}!`);
-      // Here you would typically call an enrollment API
-    }
-  }
-
-  getLevelColor(level: string): string {
-    switch (level) {
-      case 'Beginner':
-        return 'green';
-      case 'Intermediate':
-        return 'orange';
-      case 'Advanced':
-        return 'red';
-      default:
-        return 'blue';
-    }
   }
 }

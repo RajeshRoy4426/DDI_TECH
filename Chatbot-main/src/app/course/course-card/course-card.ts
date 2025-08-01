@@ -1,5 +1,5 @@
 import { Component, inject, Input } from '@angular/core';
-import { Program, ProgramDetails } from '../../interfaces/course-interface';
+import { Program } from '../../interfaces/course-interface';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -9,6 +9,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
+import { CourseService } from '../../services/course-service';
 
 @Component({
   selector: 'app-course-card',
@@ -29,13 +30,14 @@ export class CourseCard {
   @Input() program!: Program;
   @Input() compact: boolean = false;
   private router = inject(Router);
+  private courseService = inject(CourseService);
   skillTags: { name: string; color: string }[] = [];
 
   ngOnInit() {
     if (this.program.skills && this.program.skills.length > 0) {
       this.skillTags = this.program.skills.map((skill) => ({
         name: skill,
-        color: this.getRandomColor(),
+        color: this.courseService.getRandomColor(),
       }));
     }
   }
@@ -45,28 +47,5 @@ export class CourseCard {
    */
   navigateToCourse() {
     this.router.navigate(['/program', this.program.id]);
-  }
-
-  /**
-   * Get a random color for the course card to show in the tag
-   * @returns string
-   */
-  getRandomColor(): string {
-    const colors = [
-      'pink',
-      'red',
-      'yellow',
-      'orange',
-      'cyan',
-      'green',
-      'blue',
-      'purple',
-      'geekblue',
-      'magenta',
-      'volcano',
-      'gold',
-      'lime',
-    ];
-    return colors[Math.floor(Math.random() * colors.length)];
   }
 }
