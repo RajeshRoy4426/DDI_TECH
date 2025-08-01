@@ -10,12 +10,14 @@ export interface Asset {
   asset_id: string;
   title: string;
   description: string;
+  tags: string[];
 }
 
 export interface Topic {
   topic_id: string;
   title: string;
   description: string;
+  tags: string[];
   asset: Asset[];
 }
 
@@ -24,6 +26,7 @@ export interface ProgramDetails {
   title: string;
   description: string;
   totalHours: number;
+  level: string;
   skills: string[];
   programs?: Topic[];
 }

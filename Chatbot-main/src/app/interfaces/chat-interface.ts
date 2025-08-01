@@ -1,4 +1,3 @@
-import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Program } from './course-interface';
 
 export interface ChatMessage {

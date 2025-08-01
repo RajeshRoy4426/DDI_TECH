@@ -38,6 +38,7 @@ export class CourseService {
       description: response?.description || '',
       totalHours: response?.duration_hours || 0,
       skills: response?.skills || [],
+      level: response?.difficulty_level || '',
     };
 
     if (response.program && response.program.length > 0) {
@@ -57,6 +58,7 @@ export class CourseService {
           topic_id: item?.topic_id || '',
           title: item?.title || '',
           description: item?.description || '',
+          tags: item?.tags || [],
           asset: asset,
         };
       });

@@ -50,6 +50,11 @@
     >
       <nz-skeleton [nzActive]="true" [nzLoading]="isLoading">
         <p class="course-content-card-description">{{ course.description }}</p>
+        <div class="course-tags">
+          <nz-tag *ngFor="let tag of programTags" [nzColor]="tag.color">
+            {{ tag.name }}
+          </nz-tag>
+        </div>
         <div class="course-card-content">
           <nz-collapse nzAccordion>
             @for (asset of course.asset; track asset) {

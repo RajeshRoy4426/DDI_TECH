@@ -52,6 +52,7 @@ export class CourseDetail {
   private destroy$ = new Subject<void>();
   appInfo: any = null;
   skillTags: { name: string; color: string }[] = [];
+  programTags: { name: string; color: string }[] = [];
   constructor() {
     effect(() => {
       this.program = this.courseService.getProgramDetails();
@@ -64,6 +65,23 @@ export class CourseDetail {
           name: skill,
           color: this.courseService.getRandomColor(),
         }));
+      }
+
+      if (
+        this.program &&
+        this.program.programs &&
+        this.program.programs.length > 0
+      ) {
+        this.program.programs.forEach((program) => {
+          if (program.tags && program.tags.length > 0) {
+            program.tags.forEach((tag) => {
+              this.programTags.push({
+                name: tag,
+                color: this.courseService.getRandomColor(),
+              });
+            });
+          }
+        });
       }
     });
   }
