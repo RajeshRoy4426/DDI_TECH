@@ -13,7 +13,7 @@
         >
         </nz-card-meta>
         <div class="course-meta">
-          <nz-tag nzColor="default">
+          <nz-tag nzColor="default" *ngIf="program.totalHours">
             <nz-icon nzType="clock-circle" />
             <span>{{ program.totalHours }} hrs</span>
           </nz-tag>
@@ -24,8 +24,12 @@
             <nz-icon nzType="book" />
             <span>{{ program.programs.length }} topics</span>
           </nz-tag>
+          <nz-tag nzColor="default" *ngIf="program.level">
+            <!-- <nz-icon nzType="book" /> -->
+            <span>{{ program.level }}</span>
+          </nz-tag>
         </div>
-        <div class="course-tags">
+        <div class="course-tags" *ngIf="skillTags.length > 0">
           <nz-tag *ngFor="let skill of skillTags" [nzColor]="skill.color">
             {{ skill.name }}
           </nz-tag>
@@ -45,17 +49,16 @@
     <nz-card
       class="course-content-card"
       *ngFor="let course of program.programs"
-      [nzExtra]="dragTemplate"
       [nzTitle]="course.title"
     >
       <nz-skeleton [nzActive]="true" [nzLoading]="isLoading">
         <p class="course-content-card-description">{{ course.description }}</p>
-        <div class="course-tags">
+        <div class="course-tags" *ngIf="programTags.length > 0">
           <nz-tag *ngFor="let tag of programTags" [nzColor]="tag.color">
             {{ tag.name }}
           </nz-tag>
         </div>
-        <div class="course-card-content">
+        <!-- <div class="course-card-content">
           <nz-collapse nzAccordion>
             @for (asset of course.asset; track asset) {
             <nz-collapse-panel
@@ -67,7 +70,7 @@
             </nz-collapse-panel>
             }
           </nz-collapse>
-        </div>
+        </div> -->
       </nz-skeleton>
     </nz-card>
 

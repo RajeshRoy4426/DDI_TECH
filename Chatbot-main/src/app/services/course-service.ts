@@ -55,7 +55,11 @@ export class CourseService {
         }
 
         return {
-          topic_id: item?.topic_id || '',
+          id: item?.topic_id
+            ? item.topic_id
+            : item?.asset_id
+            ? item.asset_id
+            : '',
           title: item?.title || '',
           description: item?.description || '',
           tags: item?.tags || [],

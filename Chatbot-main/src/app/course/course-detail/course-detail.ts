@@ -19,6 +19,7 @@ import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
 import { Storage } from '../../services/storage';
 import { Config } from '../../services/config';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @Component({
   selector: 'app-course-detail',
@@ -36,6 +37,7 @@ import { Config } from '../../services/config';
     NzListModule,
     NzSkeletonModule,
     NzCollapseModule,
+    NzIconModule,
   ],
   templateUrl: './course-detail.html',
   styleUrl: './course-detail.scss',

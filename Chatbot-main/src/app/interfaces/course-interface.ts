@@ -14,7 +14,7 @@ export interface Asset {
 }
 
 export interface Topic {
-  topic_id: string;
+  id: string;
   title: string;
   description: string;
   tags: string[];
