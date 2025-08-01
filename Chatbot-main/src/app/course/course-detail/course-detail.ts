@@ -76,11 +76,11 @@ export class CourseDetail {
       ) {
         this.program.programs.forEach((program) => {
           if (program.tags && program.tags.length > 0) {
-            program.tags.forEach((tag) => {
-              this.programTags.push({
+            program.tags = program.tags.map((tag) => {
+              return {
                 name: tag,
                 color: this.courseService.getRandomColor(),
-              });
+              };
             });
           }
         });

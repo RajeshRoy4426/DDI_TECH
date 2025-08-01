@@ -17,7 +17,7 @@ export interface Topic {
   id: string;
   title: string;
   description: string;
-  tags: string[];
+  tags: any[];
   asset: Asset[];
 }
 
