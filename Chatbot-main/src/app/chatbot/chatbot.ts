@@ -17,7 +17,7 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { finalize, timeout } from 'rxjs';
-import { ChatMessage, carouselOptions } from '../interfaces/chat-interface';
+import { ChatMessage } from '../interfaces/chat-interface';
 import { ChatService } from '../services/chat-service';
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { CourseCard } from '../course/course-card/course-card';
@@ -57,7 +57,6 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   styleUrl: './chatbot.scss',
 })
 export class Chatbot {
-  carouselOptions = carouselOptions;
   @ViewChild('chatInput') chatInput!: ElementRef<HTMLTextAreaElement>;
   @ViewChild('chatContainer', { static: false }) chatContainer!: ElementRef;
   private chatService = inject(ChatService);
@@ -96,6 +95,9 @@ export class Chatbot {
     }
   }
 
+  /**
+   * Function to clear chat history
+   */
   clearChat() {
     this.modal.warning({
       nzTitle: 'Delete Chat?',
@@ -123,6 +125,10 @@ export class Chatbot {
     });
   }
 
+  /**
+   * Function to send message when user presses enter
+   * @param event - The keyboard event
+   */
   onKeyPress(event: KeyboardEvent) {
     if (event.key === 'Enter' && !event.shiftKey) {
       event.preventDefault();
@@ -130,6 +136,9 @@ export class Chatbot {
     }
   }
 
+  /**
+   * Function to send message to server
+   */
   sendMessage() {
     this.isLoading = true;
     const messageContent = this.currentMessage.trim();
@@ -162,6 +171,11 @@ export class Chatbot {
         });
     }
   }
+
+  /**
+   * Function to set bot response based on response type
+   * @param response - The response from the server
+   */
   setBotResponse(response: any) {
     const responseType = response.type;
     const responseData = response.data;
@@ -169,21 +183,26 @@ export class Chatbot {
 
     this.storageService.setItem('sessionId', sessionId);
 
-    if (responseType === 'generating' && responseData?.task_id) {
-      this.chatService.addBotResponse(response);
+    // If response type is generating, start polling for program status
+    if (responseType === 'generating') {
+      this.chatService.startPolling(response);
       return;
     }
 
+    // If response type is program, add program to chat
     if (responseType === 'program') {
-      this.chatService.addBotResponse({
+      let botResponse: any = {
         id: responseData.id,
         type: responseType,
         message: responseData.message || 'Here are some programs...',
         suggestedPrograms: responseData.program || [],
-      });
+      };
+
+      this.chatService.addBotResponse(botResponse);
       return;
     }
 
+    // If response type is basic, add basic response to chat
     if (responseType === 'basic') {
       let botResponse: any = {
         id: responseData.id,
@@ -198,24 +217,14 @@ export class Chatbot {
         };
       }
       this.chatService.addBotResponse(botResponse);
-
       return;
     }
-    //   if (responseType === 'error') {
-    //   this.chatService.addBotResponse({
-    //     type: responseType,
-    //     message: responseData.message || 'Sorry, I have failed to generate the Programme',
-    //   });
-    //   return;
-    // }
-
-    // fallback
-    this.chatService.addBotResponse({
-      message: 'Sorry, I didn’t understand that.',
-      suggestedPrograms: [],
-    });
   }
 
+  /**
+   * Function to handle option selection from bot response
+   * @param event - The event object
+   */
   onOptionSelected(event: any) {
     const selectedOption = event;
     this.chatMessages.forEach((message) => {
@@ -230,6 +239,9 @@ export class Chatbot {
     this.sendMessage();
   }
 
+  /**
+   * Function to scroll to bottom of chat container
+   */
   private scrollToBottom() {
     try {
       const element = this.chatContainer.nativeElement;

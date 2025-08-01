@@ -18,6 +18,7 @@ export class ChatService {
   private cancelPending$ = new Subject<void>();
 
   constructor() {
+    // Initialize chat messages from local storage
     const chatMessages = this.storageService.getItem('chatMessages');
     if (chatMessages) {
       this.chatMessages.set(chatMessages);
@@ -26,57 +27,70 @@ export class ChatService {
     }
   }
 
-  pollForProgram(taskId: string) {
-    const pollInterval = 10000; // 10 seconds
-    const timeoutMs = 8 * 60 * 1000; // 8 minutes
+  /**
+   * Polling function to generate program
+   * @param taskId - The task ID to poll for
+   */
+  pollForProgram(taskId: string): void {
+    const POLL_INTERVAL = 10000; // 10 seconds
+    const TIMEOUT_MS = 8 * 60 * 1000; // 8 minutes
     const startTime = Date.now();
+
+    this.cancelPending$ = new Subject<void>(); // Reset subject
     let isCancelled = false;
 
-    this.cancelPending$ = new Subject<void>(); // Reset subject before starting new poll
+    const URL = `${this.configService.apiBaseUrl}/api/program-status/${taskId}`;
 
     const poll = () => {
       if (isCancelled) return;
-      const elapsed = Date.now() - startTime;
-      const URL = `${this.configService.apiBaseUrl}/api/program-status/${taskId}`;
-      console.log(
-        `Polling at ${new Date().toISOString()} | Task ID: ${taskId}`
-      );
 
-      if (elapsed > timeoutMs) {
+      const elapsed = Date.now() - startTime;
+      if (elapsed > TIMEOUT_MS) {
         this.message.error('Program generation timed out after 8 minutes.');
         return;
       }
+
+      console.log(
+        `Polling at ${new Date().toISOString()} | Task ID: ${taskId}`
+      );
 
       this.http
         .get(URL, { responseType: 'text' })
         .pipe(takeUntil(this.cancelPending$))
         .subscribe({
-          next: (raw) => {
+          next: (response) => {
             if (isCancelled) return;
-            try {
-              const res = JSON.parse(raw);
 
-              if (res.type === 'program') {
+            let res: any;
+            try {
+              res = JSON.parse(response);
+            } catch (e) {
+              console.warn('Invalid JSON:', response);
+              return; // Skip retrying for malformed response
+            }
+
+            switch (res?.type) {
+              case 'program':
                 this.addBotResponse(res);
-              } else if (res.type === 'generating') {
-                setTimeout(poll, pollInterval);
-              } else if (res.type === 'error') {
+                break;
+              case 'generating':
+                setTimeout(poll, POLL_INTERVAL);
+                break;
+              case 'error':
                 this.addBotResponse({
                   message:
                     'Sorry, I was unable to generate the program. Please try again.',
                   suggestedPrograms: [],
                 });
-              } else {
-                // this.message.warning('Unexpected response type.');
-              }
-            } catch (e) {
-              // console.error('Failed to parse JSON:', e, raw);
-              // this.message.error('Invalid response format from server.');
+                break;
+              default:
+                break;
             }
           },
           error: (err) => {
             if (isCancelled) return;
             console.error('Polling error:', err);
+
             this.message.error('Error checking program status.');
             this.addBotResponse({
               message:
@@ -87,13 +101,17 @@ export class ChatService {
         });
     };
 
-    // Subscribe to cancellation and set flag
+    // Set cancellation logic
     this.cancelPending$.subscribe(() => {
       isCancelled = true;
     });
 
     poll();
   }
+
+  /**
+   * Initialize chat
+   */
   initializeChat() {
     const chatMessage: ChatMessage = {
       id: this.generateId(),
@@ -110,6 +128,10 @@ export class ChatService {
     return Date.now().toString(36) + Math.random().toString(36).substr(2);
   }
 
+  /**
+   * Send message to server
+   * @param message - The message to send
+   */
   sendMessage(message: string) {
     const newMessage: ChatMessage = {
       id: this.generateId(),
@@ -123,6 +145,10 @@ export class ChatService {
     return this.sendMessageToServer(message);
   }
 
+  /**
+   * Send message to server
+   * @param message - The message to send
+   */
   sendMessageToServer(message: string) {
     this.addTypingResponse();
 
@@ -145,6 +171,9 @@ export class ChatService {
     return this.http.post(URL, body, { headers });
   }
 
+  /**
+   * Add typing status to chat when bot is thinking
+   */
   addTypingResponse() {
     const typingMessage: ChatMessage = {
       id: this.generateId(),
@@ -157,70 +186,38 @@ export class ChatService {
     this.addMessage(typingMessage);
   }
 
+  /**
+   * Start polling for program status
+   * @param response - The response from the server
+   */
+  startPolling(response: any) {
+    const botResponse: ChatMessage = {
+      id: this.generateId(),
+      content: 'Generating programs',
+      type: 'generating',
+      sender: 'typing',
+      timestamp: new Date(),
+    };
+
+    this.chatMessages.update((messages) => [
+      ...messages.filter(
+        (msg) =>
+          msg.sender !== 'typing' &&
+          !(msg.sender === 'bot' && msg.type === 'generating')
+      ),
+      botResponse,
+    ]);
+
+    this.storageService.setItem('chatMessages', this.chatMessages());
+
+    this.pollForProgram(response.data.task_id);
+  }
+
+  /**
+   * Add bot response to chat
+   * @param response - The response from the server
+   */
   addBotResponse(response: any): void {
-    // if (response.type === 'generating' && response.data?.task_id) {
-    //   const generatingMessage: ChatMessage = {
-    //     id: this.generateId(),
-    //     content: response.data.status || 'Program is generating...',
-    //     type: 'text',
-    //     sender: 'bot',
-    //     timestamp: new Date(),
-    //   };
-
-    //   this.chatMessages.update((messages) => [
-    //     ...messages.filter((msg) => msg.sender !== 'typing'),
-    //     generatingMessage,
-    //   ]);
-    //   this.storageService.setItem('chatMessages', this.chatMessages());
-
-    //   this.pollForProgram(response.data.task_id);
-    //   return;
-    // }
-    if (response.type === 'generating' && response.data?.task_id) {
-      const loadingMessage: ChatMessage = {
-        id: this.generateId(),
-        content: '', // 👈 No text
-        type: 'generating', // 👈 So you can show a spinner
-        sender: 'typing', // 👈 Spinner-style
-        timestamp: new Date(),
-      };
-
-      this.chatMessages.update((messages) => [
-        ...messages.filter(
-          (msg) =>
-            msg.sender !== 'typing' &&
-            !(msg.sender === 'bot' && msg.type === 'generating')
-        ),
-        loadingMessage,
-      ]);
-
-      this.storageService.setItem('chatMessages', this.chatMessages());
-
-      this.pollForProgram(response.data.task_id);
-      return;
-    }
-    //   if (response.type === 'error') {
-    //   const errorMessage: ChatMessage = {
-    //     id: this.generateId(),
-    //     content: response.data?.status || 'An unknown error occurred.', // Use response.data directly
-    //     type: 'error',
-    //     sender: 'bot',
-    //     timestamp: new Date(),
-    //   };
-
-    //   this.chatMessages.update((messages) => [
-    //     ...messages.filter(
-    //       (msg) =>
-    //         msg.sender !== 'typing' &&
-    //         !(msg.sender === 'bot' && msg.type === 'error')
-    //     ),
-    //     errorMessage,
-    //   ]);
-
-    //   this.storageService.setItem('chatMessages', this.chatMessages());
-    //   return;
-    // }
-
     let botMessage: ChatMessage = {
       id: response.id || this.generateId(),
       content:
@@ -241,26 +238,33 @@ export class ChatService {
     }
 
     this.chatMessages.update((messages) => [
-      ...messages.filter(
-        (msg) => msg.sender !== 'typing'
-        // &&
-        //   !(msg.sender === 'bot' && msg.type === 'generating')
-      ),
+      ...messages.filter((msg) => msg.sender !== 'typing'),
       botMessage,
     ]);
 
     this.storageService.setItem('chatMessages', this.chatMessages());
   }
 
+  /**
+   * Add message to chat
+   * @param message - The message to add
+   */
   addMessage(message: ChatMessage) {
     this.chatMessages.update((messages) => [...messages, message]);
     this.storageService.setItem('chatMessages', this.chatMessages());
   }
 
+  /**
+   * Get all messages from chat
+   * @returns The messages from the chat
+   */
   getMessages() {
     return this.chatMessages();
   }
 
+  /**
+   * Clear chat history from server
+   */
   clearChatApi() {
     const chatEndpoint = this.configService.getApiEndpoint('clearhistory');
     const sessionId = this.storageService.getItem('sessionId');
@@ -268,6 +272,10 @@ export class ChatService {
     return this.http.post(URL, {});
   }
 
+  /**
+   * Clear chat history from local storage and reset chat
+   * Cancel all pending requests
+   */
   clearChat() {
     this.cancelPending$.next();
     this.cancelPending$.complete();

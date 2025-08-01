@@ -10,20 +10,3 @@ export interface ChatMessage {
   programs?: Program[];
   options?: any[];
 }
-
-export const carouselOptions: OwlOptions = {
-  loop: true,
-  // margin: 10,
-  nav: false,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    480: {
-      items: 2,
-    },
-    768: {
-      items: 3,
-    },
-  },
-};

@@ -63,7 +63,7 @@
               <div class="typing-indicator" *ngIf="message.sender === 'typing'">
                 @if (message.type === 'generating') {
                 <div>
-                  Generating programs
+                  {{ message.content }}
                   <div class="dots">...</div>
                 </div>
                 } @else {
@@ -120,9 +120,6 @@
   <!-- Chat footer -->
   <nz-footer class="chat-footer">
     <div class="input-container">
-      <!-- <span class="chat-footer-title" *ngIf="chatMessages.length === 0">{{
-        appInfo.description
-      }}</span> -->
       <nz-input-group nzSuffix class="chat-input-group">
         <textarea
           #chatInput
