@@ -274,12 +274,10 @@ export class Chatbot {
     let currentPhase = '';
 
     // Random durations
-    const analysisDuration = Math.floor(
-      Math.random() * (20000 - 10000) + 10000
-    ); // 10s to 20s
+    const analysisDuration = Math.floor(Math.random() * (15000 - 8000) + 8000); // 8s to 15s
     const collectionDuration = Math.floor(
-      Math.random() * (55000 - 45000) + 45000
-    ); // 45s to 55s
+      Math.random() * (50000 - 40000) + 40000
+    ); // 40s to 50s
     const collectionEndTime = analysisDuration + collectionDuration;
 
     return new Observable<string>((observer) => {
