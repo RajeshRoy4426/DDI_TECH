@@ -16,7 +16,7 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
-import { finalize, interval, Observable, timeout } from 'rxjs';
+import { finalize, interval, Observable, Subscription, timeout } from 'rxjs';
 import { ChatMessage } from '../interfaces/chat-interface';
 import { ChatService } from '../services/chat-service';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -73,6 +73,8 @@ export class Chatbot {
   appInfo: any = null;
   radioValue: string = '';
   message$: Observable<string> = new Observable<string>();
+  timerSubscription: Subscription = new Subscription();
+  messageSubscription: Subscription = new Subscription();
 
   constructor() {
     effect(
@@ -84,6 +86,8 @@ export class Chatbot {
           this.chatMessages[this.chatMessages.length - 1].type === 'generating'
         ) {
           this.startMessageUpdates();
+        } else {
+          this.stopMessageUpdates();
         }
       },
       { allowSignalWrites: true }
@@ -261,25 +265,36 @@ export class Chatbot {
   }
 
   startMessageUpdates() {
+    this.messageSubscription = this.getInteractiveMessages().subscribe();
     this.message$ = this.getInteractiveMessages();
   }
 
   getInteractiveMessages(): Observable<string> {
     const startTime = Date.now();
-    const totalDuration = 120000; // 2 minutes
     let currentPhase = '';
+
+    // Random durations
+    const analysisDuration = Math.floor(
+      Math.random() * (20000 - 10000) + 10000
+    ); // 10s to 20s
+    const collectionDuration = Math.floor(
+      Math.random() * (80000 - 50000) + 50000
+    ); // 50s to 80s
+    const collectionEndTime = analysisDuration + collectionDuration;
 
     return new Observable<string>((observer) => {
       observer.next('Analyzing your learning objectives ...');
-      const timer = interval(1000).subscribe(() => {
+      currentPhase = 'analysis';
+
+      this.timerSubscription = interval(1000).subscribe(() => {
         const elapsed = Date.now() - startTime;
 
-        if (elapsed < 15000 && currentPhase !== 'analysis') {
+        if (elapsed < analysisDuration && currentPhase !== 'analysis') {
           currentPhase = 'analysis';
           observer.next('Analyzing your learning objectives ...');
         } else if (
-          elapsed >= 50000 &&
-          elapsed < 70000 &&
+          elapsed >= analysisDuration &&
+          elapsed < collectionEndTime &&
           currentPhase !== 'collection'
         ) {
           currentPhase = 'collection';
@@ -287,22 +302,25 @@ export class Chatbot {
             'Collecting relevant content from our knowledge base ...'
           );
         } else if (
-          elapsed >= 70000 &&
-          elapsed < totalDuration &&
+          elapsed >= collectionEndTime &&
           currentPhase !== 'generation'
         ) {
           currentPhase = 'generation';
           observer.next('Generating your personalized learning program ...');
-        } else {
+        } else if (currentPhase === 'generation') {
           currentPhase = 'generation';
           observer.next('Generating your personalized learning program ...');
         }
-
-        if (elapsed >= totalDuration) {
-          timer.unsubscribe();
-          observer.complete();
-        }
       });
     });
+  }
+
+  stopMessageUpdates() {
+    if (this.timerSubscription) {
+      this.timerSubscription.unsubscribe();
+    }
+    if (this.messageSubscription) {
+      this.messageSubscription.unsubscribe();
+    }
   }
 }
