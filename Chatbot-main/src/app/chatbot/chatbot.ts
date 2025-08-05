@@ -270,6 +270,7 @@ export class Chatbot {
     let currentPhase = '';
 
     return new Observable<string>((observer) => {
+      observer.next('Analyzing your learning objectives ...');
       const timer = interval(1000).subscribe(() => {
         const elapsed = Date.now() - startTime;
 
@@ -290,6 +291,9 @@ export class Chatbot {
           elapsed < totalDuration &&
           currentPhase !== 'generation'
         ) {
+          currentPhase = 'generation';
+          observer.next('Generating your personalized learning program ...');
+        } else {
           currentPhase = 'generation';
           observer.next('Generating your personalized learning program ...');
         }
