@@ -16,7 +16,7 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
-import { finalize, timeout } from 'rxjs';
+import { finalize, interval, Observable, timeout } from 'rxjs';
 import { ChatMessage } from '../interfaces/chat-interface';
 import { ChatService } from '../services/chat-service';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -72,13 +72,19 @@ export class Chatbot {
   isOkLoading = false;
   appInfo: any = null;
   radioValue: string = '';
+  message$: Observable<string> = new Observable<string>();
 
   constructor() {
     effect(
       () => {
         this.chatMessages = this.chatService.getMessages();
-
         this.shouldScrollToBottom = true;
+
+        if (
+          this.chatMessages[this.chatMessages.length - 1].type === 'generating'
+        ) {
+          this.startMessageUpdates();
+        }
       },
       { allowSignalWrites: true }
     );
@@ -252,5 +258,47 @@ export class Chatbot {
     } catch (err) {
       console.error('Could not scroll to bottom:', err);
     }
+  }
+
+  startMessageUpdates() {
+    this.message$ = this.getInteractiveMessages();
+  }
+
+  getInteractiveMessages(): Observable<string> {
+    const startTime = Date.now();
+    const totalDuration = 120000; // 2 minutes
+    let currentPhase = '';
+
+    return new Observable<string>((observer) => {
+      const timer = interval(1000).subscribe(() => {
+        const elapsed = Date.now() - startTime;
+
+        if (elapsed < 15000 && currentPhase !== 'analysis') {
+          currentPhase = 'analysis';
+          observer.next('Analyzing your learning objectives ...');
+        } else if (
+          elapsed >= 50000 &&
+          elapsed < 70000 &&
+          currentPhase !== 'collection'
+        ) {
+          currentPhase = 'collection';
+          observer.next(
+            'Collecting relevant content from our knowledge base ...'
+          );
+        } else if (
+          elapsed >= 70000 &&
+          elapsed < totalDuration &&
+          currentPhase !== 'generation'
+        ) {
+          currentPhase = 'generation';
+          observer.next('Generating your personalized learning program ...');
+        }
+
+        if (elapsed >= totalDuration) {
+          timer.unsubscribe();
+          observer.complete();
+        }
+      });
+    });
   }
 }

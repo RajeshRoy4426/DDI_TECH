@@ -63,7 +63,7 @@
               <div class="typing-indicator" *ngIf="message.sender === 'typing'">
                 @if (message.type === 'generating') {
                 <div>
-                  {{ message.content }}
+                  {{ message$ | async }}
                   <div class="dots">...</div>
                 </div>
                 } @else {
