@@ -46,11 +46,12 @@ export class CourseCard {
    * Navigate to the course detail page
    */
   navigateToCourse() {
-    const url = this.router.serializeUrl(
+    const urlTree = this.router.serializeUrl(
       this.router.createUrlTree(['/program'], {
         queryParams: { id: this.program.id },
       })
     );
-    window.open(window.location.origin + url, '_blank');
+    const url = window.location.origin + '/#' + urlTree;
+    window.open(url, '_blank');
   }
 }
