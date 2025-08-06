@@ -46,6 +46,10 @@ export class CourseCard {
    * Navigate to the course detail page
    */
   navigateToCourse() {
-    this.router.navigate(['/program', this.program.id]);
+    const url = this.router.serializeUrl(
+      this.router.createUrlTree(['/program', this.program.id])
+    );
+
+    window.open(url, '_blank');
   }
 }
