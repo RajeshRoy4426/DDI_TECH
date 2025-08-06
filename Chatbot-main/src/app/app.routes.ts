@@ -3,8 +3,8 @@ import { Chatbot } from './chatbot/chatbot';
 import { CourseDetail } from './course/course-detail/course-detail';
 
 export const routes: Routes = [
-    { path: '', component: Chatbot },
-    { path: 'chat', component: Chatbot },
-    { path: 'program/:id', component: CourseDetail },
-    { path: '**', redirectTo: '' }
+  { path: '', component: Chatbot },
+  { path: 'chat', component: Chatbot },
+  { path: 'program', component: CourseDetail },
+  { path: '**', redirectTo: '' },
 ];

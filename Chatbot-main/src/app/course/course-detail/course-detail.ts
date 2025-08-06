@@ -90,15 +90,14 @@ export class CourseDetail {
 
   ngOnInit(): void {
     this.appInfo = this.configService.appInfo;
-    this.route.paramMap.pipe(takeUntil(this.destroy$)).subscribe((params) => {
-      const programId = params.get('id');
-      if (programId) {
-        this.loadProgramDetails(programId);
-      } else {
-        this.message.error('Program ID is required');
-        this.router.navigate(['/']);
-      }
-    });
+    this.route.queryParamMap
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((params: any) => {
+        const id = params.get('id');
+        if (id) {
+          this.loadProgramDetails(id);
+        }
+      });
   }
 
   ngOnDestroy(): void {
@@ -111,6 +110,7 @@ export class CourseDetail {
    * @param courseId - The course ID to load
    */
   loadProgramDetails(courseId: string): void {
+    console.log('loadProgramDetails');
     this.isLoading = true;
 
     this.courseService

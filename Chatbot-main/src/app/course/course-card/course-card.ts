@@ -47,9 +47,10 @@ export class CourseCard {
    */
   navigateToCourse() {
     const url = this.router.serializeUrl(
-      this.router.createUrlTree(['/program', this.program.id])
+      this.router.createUrlTree(['/program'], {
+        queryParams: { id: this.program.id },
+      })
     );
-
-    window.open(url, '_blank');
+    window.open(window.location.origin + url, '_blank');
   }
 }
