@@ -116,7 +116,6 @@ export class CourseDetail {
     this.courseService
       .getProgramDetailsApi(courseId)
       .pipe(
-        takeUntil(this.destroy$),
         finalize(() => {
           this.isLoading = false;
         })
